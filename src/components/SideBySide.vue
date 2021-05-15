@@ -3,10 +3,15 @@
     <h1 class="text-2xl my-2">Vergleich</h1>
     <div class="grid divide-x divide-x-gray-400 grid-cols-1 md:grid-cols-2">
       <div class="px-2" v-for="(result, i) in [oldText, newText]" :key="i">
-        <h2 class="text-lg font-medium">
+        <h2 class="text-lg font-medium mb-2">
           Stand {{ i === 0 ? "20.04.69" : "01.01.2022" }}
         </h2>
-        <p :class="['text-justify', i === 0 ? 'bg-green-100' : 'bg-red-100']">
+        <p
+          :class="[
+            'text-justify rounded',
+            i === 0 ? 'bg-red-100' : 'bg-green-100',
+          ]"
+        >
           <span
             v-for="([type, text], i) in result"
             :key="i"
