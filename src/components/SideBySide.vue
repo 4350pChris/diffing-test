@@ -6,7 +6,7 @@
         <h2 class="text-lg font-medium">
           Stand {{ i === 0 ? "20.04.69" : "01.01.2022" }}
         </h2>
-        <p :class="['text-justify', i === 0 ? 'bg-green-50' : 'bg-red-50']">
+        <p :class="['text-justify', i === 0 ? 'bg-green-100' : 'bg-red-100']">
           <span
             v-for="([type, text], i) in result"
             :key="i"
