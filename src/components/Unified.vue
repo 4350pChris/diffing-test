@@ -5,7 +5,10 @@
       <span
         v-for="([type, text], i) in result"
         :key="i"
-        :class="{ 'text-red-500': type === -1, 'text-green-500': type === 1 }"
+        :class="{
+          'bg-red-100 text-red-800': type === -1,
+          'bg-green-50 text-green-800': type === 1,
+        }"
         v-text="text"
       />
     </p>

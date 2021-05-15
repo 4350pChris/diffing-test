@@ -6,13 +6,13 @@
         <h2 class="text-lg font-medium">
           Stand {{ i === 0 ? "20.04.69" : "01.01.2022" }}
         </h2>
-        <p class="text-justify">
+        <p :class="['text-justify', i === 0 ? 'bg-green-50' : 'bg-red-50']">
           <span
             v-for="([type, text], i) in result"
             :key="i"
             :class="{
-              'text-red-600': type === -1,
-              'text-green-500': type === 1,
+              'text-red-800': type === -1,
+              'text-green-800': type === 1,
             }"
             v-text="text"
           />

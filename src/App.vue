@@ -1,7 +1,7 @@
 <template>
   <section>
     <button
-      class="shadow text-sm capitalize p-2 my-4 rounded transition bg-gray-100 hover:bg-gray-300 hover:shadow focus:outline-none"
+      class="shadow text-sm uppercase p-2 my-4 rounded transition bg-gray-100 hover:bg-gray-300 hover:shadow focus:outline-none"
       @click="unified = !unified"
     >
       {{ unified ? "nebeneinander" : "zusammengefasst" }} ansehen
