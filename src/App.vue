@@ -1,8 +1,5 @@
 <template>
   <section>
-    <h1 class="text-2xl leading-6">
-      {{ unified ? "Zussamenfassung" : "Vergleich" }}
-    </h1>
     <button
       class="p-2 my-4 rounded transition bg-gray-100 hover:bg-gray-300 hover:shadow"
       @click="unified = !unified"
