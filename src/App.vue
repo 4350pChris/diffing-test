@@ -9,9 +9,9 @@
     <UnifiedView v-if="unified" :result="result" />
     <SideBySide v-else :result="result" />
   </section>
-  <section @click="code = !code" title="collapse">
+  <section class="cursor-pointer" @click="code = !code" title="collapse">
     <h1 class="text-2xl leading-6 mt-8 mb-4">Code</h1>
-    <div class="cursor-pointer">
+    <div>
       <template v-if="code">
         <code class="block" v-for="token in result" :key="token.toString()">
           {{ token }}

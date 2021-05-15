@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-2xl">Zusammenfassung</h1>
+    <h1 class="text-2xl my-2">Zusammenfassung</h1>
     <p class="text-justified">
       <span
         v-for="([type, text], i) in result"

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h1 class="text-2xl">Vergleich</h1>
+    <h1 class="text-2xl my-2">Vergleich</h1>
     <div class="grid divide-x divide-x-gray-400 grid-cols-1 md:grid-cols-2">
       <div class="px-2" v-for="(result, i) in [oldText, newText]" :key="i">
         <h2 class="text-lg font-medium">
-          Stand {{ i === 0 ? "20.02.69" : "01.01.2022" }}
+          Stand {{ i === 0 ? "20.04.69" : "01.01.2022" }}
         </h2>
         <p class="text-justify">
           <span
